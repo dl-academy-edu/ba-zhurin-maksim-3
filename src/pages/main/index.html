@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link href="./common.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/static/images/favicon.ico">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1">
+    <title>Главная</title>
+</head>
+
+<body>
+    @@include("form/index.html")
+    @@include("header/index.html")
+    <section class="information container">
+        <div class="information__name">
+            <h1 class="information__name_title">Antonina <br> Antoninovna</h1>
+            <span class="information__name_about">Future front-end developer <br>
+                23 years old, Tolyatti</span>
+        </div>
+        <div>
+            <div class="slider">
+                <div class="slider__wrapper">
+                    <div class="slider__inner-wrapper">
+                        <div class="slider__slide"><img class="information__img" src="/static/images/antonina.jpg"
+                                alt="image"></div>
+                        <div class="slider__slide">image 2</div>
+                        <div class="slider__slide">image 3</div>
+                        <div class="slider__slide">image 4</div>
+                    </div>
+                </div>
+                <div class="slider__bottom-panel">
+                    <button class="slider__button slider__button_back"><img src="/static/images/button.svg"
+                            alt="button"></button>
+                    <div class="slider__pagination"></div>
+                    <button class="slider__button slider__button_next"><img src="/static/images/button.svg"
+                            alt="button"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about container">
+        <h2 class="about__title">About me</h2>
+        <div class="about__info">
+                <div class="about__info_block-inf">
+                    <span class="about__info_span-inf">Aliquam tortor molestie turpis est tristique. Congue diam orci amet
+                        quis semper ut. Vitae aenean nibh
+                        facilisis urna, ultricies euismod nunc. Commodo fringilla sit hendrerit consequat. Vel ac elit vel
+                        sagittis.</span>
+                </div>
+                <div class="about__info_block-inf">
+                    <span class="about__info_span-inf">Tincidunt id quis pellentesque rutrum pretium. Egestas aliquam
+                        dictum ipsum nisl, sed pulvinar.
+                        Commodo elit sed a fermentum non justo. Etiam platea consectetur.</span>
+                </div>
+                <div class="about__info_block-inf">
+                    <span class="about__info_span-inf">Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus
+                        nec vitae nunc ultricies
+                        placerat. Nullam nec felis eu id dolor pellentesque tristique.</span>
+                </div>
+        </div>
+    </section>
+    <section class="skills container">
+        <h3 class="skills__title">Skills</h3>
+        <span class="skills__span">I     work in such programs as</span>
+        <div class="skills__icons">
+            <div class="skills__icons_wrapper"><img src="/static/images/skills/html.svg" alt="icons"></div>
+            <div class="skills__icons_wrapper"><img src="/static/images/skills/css.svg" alt="icons"></div>
+            <div class="skills__icons_wrapper"><img src="/static/images/skills/js.svg" alt="icons"></div>
+            <div class="skills__icons_wrapper"><img src="/static/images/skills/git.svg" alt="icons"></div>
+            <div class="skills__icons_wrapper"><img src="/static/images/skills/figma.svg" alt="icons"></div>
+        </div>
+    </section>
+    <section class="portfolio container">
+        <h3 class="portfolio__title">Portfolio</h3>
+        <div class="portfolio__content">
+            <div><img class="portfolio__content_img" src="/static/images/portfolio.png" alt="portfolio"></div>
+            <div class="portfolio__content_info">
+                <span class="portfolio__content_info-learn">Learning site for DL Academy courses</span>
+                <span class="portfolio__content_info-about"><br> A simple multi-page static site. The design layout was
+                    in <br>
+                    Figma. HTML and CSS were used. The site is responsive and <br> cross-browser, but without adding
+                    interactivity via JavaScript.</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts container">
+        <h3 class="contacts__title">Contacts</h3>
+        <span class="contacts__span">Want to know more or just chat?<br>
+            You are welcome!</span>
+        <button class="contacts__send" type="button">Send message</button>
+        <div class="block_button">
+            @@include("social-link/index.html",{
+            "text": "Instagram"})
+            @@include("social-link/index.html",{
+            "text": "Vk"})
+            @@include("social-link/index.html",{
+            "text": "Telegram"})
+            @@include("social-link/index.html",{
+            "text": "Mail"})
+            @@include("social-link/index.html",{
+            "text": "GitHub"})
+            @@include("social-link/index.html",{
+            "text": "Phone"})
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer__design">Design by DL Academy</p>
+        <p class="footer__design">Program code from Antonina</p>
+    </footer>
+    <script src="scripts.js"></script>
+    <!-- <script src="form.js"></script> -->
+</body>
+
+</html>

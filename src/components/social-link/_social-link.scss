@@ -1,0 +1,22 @@
+.social_links{
+    padding: 5px;
+    text-align: center;
+}
+
+.social-inner{
+    background-color: transparent;
+    margin: 0;
+    padding: 10px 19px;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    border-radius: 30px;
+    border: solid black 2.5px;
+    &:hover{
+        background-color: #000;
+        color: #fff;
+        transition: all 0.4s;
+    }
+}

@@ -1,0 +1,56 @@
+.header{
+    &__inner{
+        margin-top: 33px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #828282;
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0;
+        margin-top: 0;
+
+        &_item:not(:first-child){
+            margin-left: 20px;
+        }
+
+        &_link{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: #828282;
+        }
+
+        &_link-sign{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: #828282;
+        }
+
+        &_link-register{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: #828282;
+        }
+
+        &_link-home{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: #070707;
+        }
+    }
+
+}

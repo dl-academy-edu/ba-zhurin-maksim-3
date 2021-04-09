@@ -1,0 +1,132 @@
+.sign-open .sign{
+    display: flex;
+}
+
+.sign{
+    display: none;
+    background: rgba(246, 246, 246, 0.99);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+    &__form{
+        padding: 40px;
+        position: relative;
+        background-color: #fff;
+        border: 2.5px solid #070707;
+        height: fit-content;
+    }
+
+
+    &__button-close{
+        position: absolute;
+        top: -16px;
+        right: -34px;
+        background-color: transparent;
+        transform: rotate(45deg);
+        font-size: 40px;
+        border: none;
+        color: #828282;
+        outline: none;
+    }
+
+    &__input{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        &_label{
+            margin-bottom: 6px;
+            font-style: normal;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+}
+
+.register-open .register{
+    display: flex;
+}
+
+.register{
+    display: none;
+    background: rgba(246, 246, 246, 0.99);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    &__form{
+        padding: 40px;
+        position: relative;
+        background-color: #fff;
+        border: 2.5px solid #070707;
+        
+    }
+
+    &__button-close{
+        position: absolute;
+        top: -16px;
+        right: -34px;
+        background-color: transparent;
+        transform: rotate(45deg);
+        font-size: 40px;
+        border: none;
+        color: #828282;
+        outline: none;
+    }
+
+    &__input{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        &_label{
+            margin-bottom: 6px;
+            font-style: normal;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+
+    &__input2{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    &__input3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input4{
+        margin-bottom: 20px;
+    }
+
+    &__check-label{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #E5E5E5;
+    }
+
+    &__input-border{
+        border: 2.5px solid #E5E5E5;
+    }
+}
+
